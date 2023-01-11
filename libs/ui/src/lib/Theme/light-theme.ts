@@ -14,7 +14,9 @@ const lightTheme = {
     ...slate,
     // misc
     link: "$blue8",
-    bgColor : "white"
+    bgColor : "white",
+    code: "$green10",
+
   },
   shadows: {
     xs: "-4px 0 4px rgb(0 0 0 / 5%);",
