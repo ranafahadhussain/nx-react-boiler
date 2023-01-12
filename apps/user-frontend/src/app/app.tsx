@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import NxWelcome from './nx-welcome';
 import { darkTheme, globalStyles , Spinner, ThemeToggle } from '@tote/ui';
-
+import { RouterProvider } from "react-router-dom";
+import routes from './routing/Routes';
+import React, { Suspense } from "react";
 const StyledApp = styled.div`
   // Your style here
 `;
@@ -10,9 +11,12 @@ export function App() {
   globalStyles()
   return (
     <StyledApp>
-      <Spinner size = {'xs'} />
+      <Suspense fallback =  { <Spinner />}>
+        <RouterProvider router={routes} />     
+      </Suspense>
+      {/* <Spinner size = {'xs'} />
       <ThemeToggle />
-      <NxWelcome title="user-frontend" />
+      <NxWelcome /> */}
     </StyledApp>
   );
 }
