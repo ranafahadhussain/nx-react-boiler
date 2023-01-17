@@ -1,4 +1,4 @@
-import type * as Stitches from "@stitches/react";
+import type * as Stitches from '@stitches/react';
 
 const defaultTokens = {
   fonts: {
@@ -6,9 +6,9 @@ const defaultTokens = {
     mono: "Menlo, Monaco, 'Lucida Console', 'Courier New', monospace;",
   },
   fontSizes: {
-    1: "13px",
-    2: "15px",
-    3: "17px",
+    1: '13px',
+    2: '15px',
+    3: '17px',
   },
   fontWeights: {
     hairline: 100,
@@ -22,83 +22,83 @@ const defaultTokens = {
     black: 900,
   },
   space: {
-    0: "0rem",
-    xs: "0.5rem",
-    sm: "0.75rem", // used in container gap unit
-    md: "1rem",
-    lg: "1.375rem", // used in row gap unit
-    xl: "2.25rem",
-    px: "1px",
-    1: "0.125rem",
-    2: "0.25rem",
-    3: "0.375rem",
-    4: "0.5rem",
-    5: "0.625rem",
-    12: "2rem",
+    0: '0rem',
+    xs: '0.5rem',
+    sm: '0.75rem', // used in container gap unit
+    md: '1rem',
+    lg: '1.375rem', // used in row gap unit
+    xl: '2.25rem',
+    px: '1px',
+    1: '0.125rem',
+    2: '0.25rem',
+    3: '0.375rem',
+    4: '0.5rem',
+    5: '0.625rem',
+    12: '2rem',
   },
   sizes: {
-    12: "2rem",
-    14: "2.5rem",
+    12: '2rem',
+    14: '2.5rem',
   },
   breakpoints: {
-    xs: "650px",
-    sm: "960px",
-    md: "1280px",
-    lg: "1400px",
-    xl: "1920px",
+    xs: '650px',
+    sm: '960px',
+    md: '1280px',
+    lg: '1400px',
+    xl: '1920px',
   },
   radii: {
-    xs: "7px",
-    sm: "9px",
-    md: "12px",
-    base: "14px",
-    lg: "14px",
-    xl: "18px",
-    squared: "33%",
-    rounded: "50%",
-    pill: "9999px",
+    xs: '7px',
+    sm: '9px',
+    md: '12px',
+    base: '14px',
+    lg: '14px',
+    xl: '18px',
+    squared: '33%',
+    rounded: '50%',
+    pill: '9999px',
   },
 };
 
 const defaultColors = {
   // generic colors
-  white: "#ffffff",
-  black: "#000000",
+  white: '#ffffff',
+  black: '#000000',
 
   // brand colors
 
-  primaryBase: "$blue1",
-  primaryBgSubtle: "$blue2",
-  primaryBg: "$blue3",
-  primaryBgHover: "$blue4",
-  primaryBgActive: "$blue5",
-  primaryLine: "$blue6",
-  primaryBorder: "$blue7",
-  primaryBorderHover: "$blue8",
-  primarySolid: "$blue9",
-  primary: "$blue9",
-  primarySolidHover: "$blue10",
-  primaryText: "$blue11",
-  primaryTextContrast: "$blue12",
+  primaryBase: '$blue1',
+  primaryBgSubtle: '$blue2',
+  primaryBg: '$blue3',
+  primaryBgHover: '$blue4',
+  primaryBgActive: '$blue5',
+  primaryLine: '$blue6',
+  primaryBorder: '$blue7',
+  primaryBorderHover: '$blue8',
+  primarySolid: '$blue9',
+  primary: '$blue9',
+  primarySolidHover: '$blue10',
+  primaryText: '$blue11',
+  primaryTextContrast: '$blue12',
 
-  secondary: "$purple9",
+  secondary: '$purple9',
 
-  success: "$green9",
+  success: '$green9',
 
-  warning: "$yellow9",
+  warning: '$yellow9',
 
-  error: "$red9",
+  error: '$red9',
 
   gradient:
-    "linear-gradient(112deg, $cyan600 -63.59%, $pink600 -20.3%, $blue600 70.46%)",
+    'linear-gradient(112deg, $cyan600 -63.59%, $pink600 -20.3%, $blue600 70.46%)',
 
   // misc
-  border: "$gray7",
-  text: "$slate12",
-  bgColor: "black",
-  codeLight: "$cyan5",
-  code: "$cyan6",
-  selection: "$pink8",
+  border: '$gray7',
+  text: '$slate12',
+  bgColor: 'black',
+  codeLight: '$cyan5',
+  code: '$cyan6',
+  selection: '$pink8',
 };
 
 const defaultMedia = {
@@ -107,78 +107,78 @@ const defaultMedia = {
   md: `(min-width: ${defaultTokens.breakpoints.md})`,
   lg: `(min-width: ${defaultTokens.breakpoints.lg})`,
   xl: `(min-width: ${defaultTokens.breakpoints.xl})`,
-  motion: "(prefers-reduced-motion: reduce)",
-  dark: "(prefers-color-scheme: dark)",
-  light: "(prefers-color-scheme: light)",
+  motion: '(prefers-reduced-motion: reduce)',
+  dark: '(prefers-color-scheme: dark)',
+  light: '(prefers-color-scheme: light)',
 };
 
 const defaultUtils = {
-  p: (value: Stitches.PropertyValue<"padding">) => ({
+  p: (value: Stitches.PropertyValue<'padding'>) => ({
     padding: value,
   }),
-  pt: (value: Stitches.PropertyValue<"paddingTop">) => ({
+  pt: (value: Stitches.PropertyValue<'paddingTop'>) => ({
     paddingTop: value,
   }),
-  pr: (value: Stitches.PropertyValue<"paddingRight">) => ({
+  pr: (value: Stitches.PropertyValue<'paddingRight'>) => ({
     paddingRight: value,
   }),
-  pb: (value: Stitches.PropertyValue<"paddingBottom">) => ({
+  pb: (value: Stitches.PropertyValue<'paddingBottom'>) => ({
     paddingBottom: value,
   }),
-  pl: (value: Stitches.PropertyValue<"paddingLeft">) => ({
+  pl: (value: Stitches.PropertyValue<'paddingLeft'>) => ({
     paddingLeft: value,
   }),
-  px: (value: Stitches.PropertyValue<"paddingLeft">) => ({
+  px: (value: Stitches.PropertyValue<'paddingLeft'>) => ({
     paddingLeft: value,
     paddingRight: value,
   }),
-  py: (value: Stitches.PropertyValue<"paddingTop">) => ({
+  py: (value: Stitches.PropertyValue<'paddingTop'>) => ({
     paddingTop: value,
     paddingBottom: value,
   }),
 
-  m: (value: Stitches.PropertyValue<"margin">) => ({
+  m: (value: Stitches.PropertyValue<'margin'>) => ({
     margin: value,
   }),
-  mt: (value: Stitches.PropertyValue<"marginTop">) => ({
+  mt: (value: Stitches.PropertyValue<'marginTop'>) => ({
     marginTop: value,
   }),
-  mr: (value: Stitches.PropertyValue<"marginRight">) => ({
+  mr: (value: Stitches.PropertyValue<'marginRight'>) => ({
     marginRight: value,
   }),
-  mb: (value: Stitches.PropertyValue<"marginBottom">) => ({
+  mb: (value: Stitches.PropertyValue<'marginBottom'>) => ({
     marginBottom: value,
   }),
-  ml: (value: Stitches.PropertyValue<"marginLeft">) => ({
+  ml: (value: Stitches.PropertyValue<'marginLeft'>) => ({
     marginLeft: value,
   }),
-  mx: (value: Stitches.PropertyValue<"marginLeft">) => ({
+  mx: (value: Stitches.PropertyValue<'marginLeft'>) => ({
     marginLeft: value,
     marginRight: value,
   }),
-  my: (value: Stitches.PropertyValue<"marginTop">) => ({
+  my: (value: Stitches.PropertyValue<'marginTop'>) => ({
     marginTop: value,
     marginBottom: value,
   }),
 
-  bgColor: (value: Stitches.PropertyValue<"backgroundColor">) => ({
+  bgColor: (value: Stitches.PropertyValue<'backgroundColor'>) => ({
     backgroundColor: value,
   }),
 
-  size: (value: Stitches.PropertyValue<"width">) => ({
+  size: (value: Stitches.PropertyValue<'width'>) => ({
     width: value,
     height: value,
   }),
 
-  linearGradient: (value: Stitches.PropertyValue<"backgroundImage">) => ({
+  linearGradient: (value: Stitches.PropertyValue<'backgroundImage'>) => ({
     backgroundImage: `linear-gradient(${value})`,
   }),
-  textGradient: (value: Stitches.PropertyValue<"backgroundImage">) => ({
+  textGradient: (value: Stitches.PropertyValue<'backgroundImage'>) => ({
     backgroundImage: `linear-gradient(${value})`,
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-    "&::selection": {
-      WebkitTextFillColor: "$colors$text",
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    '&::selection': {
+      WebkitTextFillColor: '$colors$text',
     },
   }),
 };
